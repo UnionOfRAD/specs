@@ -18,7 +18,7 @@ Before the accepted status is reached a spec may go through the _draft_ and _pro
 
 li₃ also follows selected external standards, created by the _PHP Framework Interoperability Group_:
 
-- [PSR-0 Autloading Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md)
+- [PSR-0 Autoloading Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md)
 
 ## Coypright and License
 
