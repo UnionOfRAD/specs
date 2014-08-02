@@ -1,0 +1,11 @@
+{
+	"name": "unionofrad/specs",
+	"type": "lithium-library",
+	"description": "li3 Standard Specifications",
+	"keywords": ["docs", "lithium", "li3", "documentation", "specifcation", "standard"],
+	"homepage": "https://github.com/UnionOfRAD/specs",
+	"license": "BSD-3-clause",
+	"require": {
+		"composer/installers": "*"
+	}
+}
