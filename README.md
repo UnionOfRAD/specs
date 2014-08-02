@@ -10,7 +10,7 @@ Drafts may also be created outside this repository inside the main li₃ reposit
 
 ## Standards
 
-Once a spec reaches _accepted_ status it becomes a standard and is assigned an identifier in the form of `LSR-XXX`. LSR stands for Lithium Standard Recommendation.
+Once a spec reaches _accepted_ status it becomes a standard and is assigned an identifier in the form of `LSR-X`. LSR stands for Lithium Standard Recommendation.
 
 Before the accepted status is reached a spec may go through the _draft_ and _proposed_ stages.
 
