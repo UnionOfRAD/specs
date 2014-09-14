@@ -1,3 +1,5 @@
+# LSR-1 Documenting
+
 ## Abstract
 
 For checking if the codebase complies with the standards we make use of the `Syntax` command which comes with the [QA plugin for Lithium](https://github.com/UnionOfRAD/li3_qa). Rules which have a corresponding check in Lithium QA are marked with the `◌` symbol.

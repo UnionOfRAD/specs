@@ -1,0 +1,38 @@
+{
+	"languages": ["en"],
+	"category": "manuals",
+	"en": {
+		"title": "Specifications",
+		"path": "/",
+		"description": "Specifications (or _specs_ for short) help us take li₃ further.",
+		"contents": {
+			"accepted": {
+				"title": "Accepted",
+				"contents": {
+					"accepted/LSR-0-coding.md": {"title": "LSR-0 Coding"},
+					"accepted/LSR-1-documenting.md": {"title": "LSR-0 Documenting"},
+					"accepted/LSR-2-testing.md": {"title": "LSR-2 Testing"}
+				}
+			},
+			"proposed": {
+				"title": "Proposed",
+				"contents": {
+				}
+			},
+			"draft": {
+				"title": "Draft",
+				"contents": {
+					"draft/access.md": {"title": "Access"},
+					"draft/ajax.md": {"title": "AJAX"},
+					"draft/caching.md": {"title": "Caching"},
+					"draft/documentation.md": {"title": "Documentation"},
+					"draft/error-handling.md": {"title": "Error Handling"},
+					"draft/globalization.md": {"title": "Globalization"},
+					"draft/logging.md": {"title": "Logging"},
+					"draft/translating.md": {"title": "Translating"},
+					"draft/visual-identity.md": {"title": "Visual Identity"}
+				}
+			}
+        }
+    }
+}
