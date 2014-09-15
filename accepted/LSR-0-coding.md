@@ -21,21 +21,25 @@ Lines must not exceed a limit of **100 characters**.<sup>?</sup> The soft limit 
 ### PHP tags
 
 Always use long open tags:
+
 ```
 <?php
 ```
 
 Never use short open tags:
+
 ```
 <?
 ```
 
 Well, unless you are in a view and want the variable data to be automatically escaped. See the Lithium [template namespace documentation](http://lithify.me/docs/lithium/template) for more information on this exception.
+
 ```php
 <?=$post->title;?>
 ```
 
 Always include a closing tag:
+
 ```php
 <?php
 
@@ -51,6 +55,7 @@ class Foo {
 ## Indentation
 
 **One tab** will be used for indentation. So, indentation should look like this:
+
 ```php
 <?php
 // Base level
@@ -62,6 +67,7 @@ class Foo {
 ```
 
 Indentation is **always symmetrical**. Any opening syntax construct that begins on a new line should be matched with a closing construct (that also begins on a new line) indented at the same level.  Any lines enclosed by a beginning and ending construct should be indented exactly one tab in from the enclosing lines. If the contents of an enclosure are broken out over multiple lines, then no enclosed elements should be on the same line as the enclosing structures.
+
 ```php
 // Bad.
 // (1) Array elements are indented too far.
@@ -101,6 +107,7 @@ $params = array('controller' => $params['plugin'], 'action' => $params['controll
 ## Operators
 
 All [operators ](http://php.net/manual/en/language.operators.php) must be surrounded by spaces<sup>?</sup>.
+
 ```php
 $x = $y;
 'x' . 'y';
@@ -121,6 +128,7 @@ However there are a few exceptions to the spacing rule<sup>?</sup>:
 4. Labels must have no spaces surrounding them.
 5. Negative **literal** integers or floats must have the minus sign directly attached.
 6. Minus signs involved in negations of i.e. variables can be spaced or directly attached.
+
 ```php
 $x--;
 $x++;
@@ -136,6 +144,7 @@ In order to increase readability of the code it is allowed to use spaces **or** 
 
 1. Multiple function calls.
 2. Concatenating a long message.
+
 ```php
 $those    = examples($are);
 $the      = best($ones);
@@ -145,7 +154,9 @@ $message .= 'multiple lines.';
 ```
 
 ## Control Structures
+
 Control structures are for example `if`, `for`, `foreach`, `while`, `switch` etc. Below, an example with `if`:
+
 ```php
 if (($a == $b) || ($a == c)) {
 	// Action 1.
@@ -161,6 +172,7 @@ In the control structures there should be **1 (one) space before** the first par
 **Always use curly brackets** in control structures, even if they are not needed. They increase the readability of the code, and they give you fewer logical errors.<sup>?</sup>
 
 Opening curly brackets should be placed on the same line as the control structure.<sup>?</sup>  Closing curly brackets should be placed on new lines, and they should have same indentation level as the control structure.<sup>?</sup> The statement included in curly brackets should begin on a new line, and code contained within it should gain a new level of indentation.
+
 ```php
 // Bad - no brackets, badly placed statement.
 if ($foo == $bar) $foo++;
@@ -176,6 +188,7 @@ if ($foo == $bar) {
 ```
 
 Instead of complex `elseif` constructs consider using stacked `if`s.
+
 ```php
 if ($foo == $bar) {
 	// Action 1.
@@ -184,9 +197,11 @@ if ($foo == 'bar') {
 	// Action 2.
 }
 ```
+
 ### Switch Statements
 
 The control portions of switch blocks should follow a consistent indent pattern, such that the closing `break` statement should be indented to the **same level** as the corresponding opening `case` statement.
+
 ```php
 switch ($foo) {
 	case "first":
@@ -213,6 +228,7 @@ Parentheses _may_ be added to the conditional expression or entire ternary state
 ## Variables
 
 Variable names should be as descriptive as possible, but also as short as possible. Normal variables should start with a lowercase letter, and should be written in [wiki:CamelBack camelBack] in case of multiple words. Note that even variables containing objects must **not** start with a capital letter.
+
 ```php
 $user = 'John';
 $users = array('John', 'Hans', 'Arne');
@@ -225,6 +241,7 @@ Array keys used in `$options`/results arrays should be formatted according to th
 ## Constants
 
 Constants should be defined in capital letters<sup>?</sup>. If a constant name consists of multiple words, they should be separated by an underscore character.
+
 ```php
 define('FOO', 1);
 define('FOO_BAR_BAZ', 2);
@@ -234,19 +251,22 @@ define('FOO_BAR_BAZ', 2);
 
 Casts must not have any whitespace inside the cast, must only use long type names and be **separated by one space** from the following variable or value.<sup>?</sup>
 
-	// Bad.
-	(bool) $result;
-	( boolean ) $result;
-	(boolean)$result;
-	(boolean)  $result;
+```php
+// Bad.
+(bool) $result;
+( boolean ) $result;
+(boolean)$result;
+(boolean)  $result;
 
-	// Good.
-	(boolean) $result;
-	(integer) $value;
+// Good.
+(boolean) $result;
+(integer) $value;
+```
 
 ## Functions
 
 Function names should be written in _camelBack_.
+
 ```php
 function longFunctionName() {
     // ...
@@ -255,9 +275,12 @@ function longFunctionName() {
 
 Functions should be called **without space** between function's name and starting bracket. There should be **one space** between every parameter of a function call.
 
-	$var = foo($bar, $bar2, $bar3);
+```php
+$var = foo($bar, $bar2, $bar3);
+```
 
 Example of a function definition:
+
 ```php
 function someFunction($arg1, $arg2 = '') {
 	if ($foo == $bar) {
@@ -269,62 +292,71 @@ function someFunction($arg1, $arg2 = '') {
 
 Parameters with a default value, should be placed last in function definition. Try to **make your functions return something**, at least `true` or `false` - so it can be determined whether the function call was successful.
 
-	function connection(&$dsn, $persistent = false) {
-		if (is_array($dns)) {
-			$dnsInfo = &$dns;
-		} else {
-			$dnsInfo = BD::parseDNS(dns);
-		}
-
-		if (!($dnsInfo) || !($dnsInfo['phpType'])) {
-			return $this->addError();
-		}
-		return true;
+```php
+function connection(&$dsn, $persistent = false) {
+	if (is_array($dns)) {
+		$dnsInfo = &$dns;
+	} else {
+		$dnsInfo = BD::parseDNS(dns);
 	}
+
+	if (!($dnsInfo) || !($dnsInfo['phpType'])) {
+		return $this->addError();
+	}
+	return true;
+}
+```
 
 Functions without body content should be written like so.
 
-	function connection(&$dsn, $persistent = false) {}
+```php
+function connection(&$dsn, $persistent = false) {}
+```
 
 ## Namespaces
 
 The namespace  declaration must appear directly after the opening php tag, separated by an empty line.<sup>?</sup> Any static dependencies **appear as one block** after the namespace declaration, separated by an empty line.
 
-	<?php
+```php
+<?php
 
-	namespace lithium\util;
+namespace lithium\util;
 
-	use Exception;
-	use lithium\util\Inflector;
+use Exception;
+use lithium\util\Inflector;
+```
 
 ### Singularity
 
 Namespaces should be written in lowercase singular form, example:
 
-	// Bad.
-	namespace lithium\data\sources;
+```php
+// Bad.
+namespace lithium\data\sources;
 
-	// Good.
-	namespace lithium\data\source;
+// Good.
+namespace lithium\data\source;
+```
 
 There are a few exceptions to the singularity rule:
 
-* ```tests\cases```,
-* ```app\*``` (e.g., ```app\extensions```)
-* ```<plugin>\*``` (e.g., ```myplugin\extensions```)
+* `tests\cases`,
+* `app\*` (e.g., `app\extensions`)
+* `<plugin>\*` (e.g., `myplugin\extensions`)
 
 ## Classes
 
 ### Name
 
 Class names should be written in _CamelCase_, for example:
+
 ```php
 class Foo {
      // ...
 }
-````
+```
 
-Class names should always be singular nouns, i.e. ```Dispatcher```, ```PagesController``` or ```Environment```, unless they are __collection__ classes.
+Class names should always be singular nouns, i.e. `Dispatcher`, `PagesController` or `Environment`, unless they are __collection__ classes.
 
 ### Member Visibility
 
@@ -332,13 +364,15 @@ All methods and properties must have  a visibility operator. The `var` operator 
 
 A **protected** method or variable name start with a single underscore ("`_`").
 
-	class Foo {
-		protected $_iAmAProtectedVariable;
+```php
+class Foo {
+	protected $_iAmAProtectedVariable;
 
-		protected function _iAmAProtectedMethod() {
-			// ...
-		}
+	protected function _iAmAProtectedMethod() {
+		// ...
 	}
+}
+```
 
 A private method or variables: **This is a framework, it should be extensible.**  As such, there's no reason to ever use private methods or variables.
 
@@ -346,31 +380,33 @@ A private method or variables: **This is a framework, it should be extensible.**
 
 This defines the basic anatomy of a Lithium class, by the numbers:
 
-	<?php
+```php
+<?php
 
-	namespace my\package; // (1)
+namespace my\package; // (1)
 
-	use my\package\util\Foo; // (2)
-	use my\package\util\Bar;
+use my\package\util\Foo; // (2)
+use my\package\util\Bar;
 
-	class AwesomeSocket extends \lithium\core\Object { // (3)
+class AwesomeSocket extends \lithium\core\Object { // (3)
 
-		protected $_classes = array( // (4)
-			'query' => 'lithium\model\Query',
-			'record' => 'lithium\model\Record'
-		);
+	protected $_classes = array( // (4)
+		'query' => 'lithium\model\Query',
+		'record' => 'lithium\model\Record'
+	);
 
-		public function __construct($config = array()) { // (5)
-			// Minimum class bootstrap logic here...
-			parent::__construct($config);
-		}
-
-		protected function _init() { // (6)
-			// Any additional bootstrap logic here...
-		}
+	public function __construct($config = array()) { // (5)
+		// Minimum class bootstrap logic here...
+		parent::__construct($config);
 	}
 
-	?>
+	protected function _init() { // (6)
+		// Any additional bootstrap logic here...
+	}
+}
+
+?>
+```
 
 #### Legend
 
@@ -392,12 +428,14 @@ A common method grammar and vocabulary should be adhered to as much as possible,
 
 If a function has a reciprocal sub-routine (or vice-versa), they should be combined where possible, using an optional parameter to differentiate.  The basic pattern is as follows:
 
+```php
 	public function value($value = null) {
 		if ($value === null) {
 			return $this->value;
 		}
 		$this->value = $value;
 	}
+```
 
 ## Importing/Including
 
@@ -414,24 +452,26 @@ When importing classes, names should never be aliased unless absolutely necessar
 
 Except for the `extends` part of the class declaration, all namespaced class references should never be used inline in code.  Instead, the reference should be declared at the top of the class.
 
-	// Good.
-	class Bar extends \lithium\Foo {
-		// ...
-	}
+```php
+// Good.
+class Bar extends \lithium\Foo {
+	// ...
+}
 
-	// Good.
-	class Baz extends \lithium\core\Object {
-		// ...
-		$bar = new Bar();
-		// ...
-	}
+// Good.
+class Baz extends \lithium\core\Object {
+	// ...
+	$bar = new Bar();
+	// ...
+}
 
-	// Bad.
-	class Baz extends lithium\core\Object {
-		// ...
-		$bar = new lithium\foo\Bar();
-		// ...
-	}
+// Bad.
+class Baz extends lithium\core\Object {
+	// ...
+	$bar = new lithium\foo\Bar();
+	// ...
+}
+```
 
 Names appearing after the `use` keyword are always fully qualified but must not have a leading backslash.<sup>?</sup>
 
@@ -463,14 +503,18 @@ The message **must not** include the method/class name.
 
 Examples of **good** exception messages:
 
-	"Could not write template `{$template}` to cache."
-	"Entity `{$entity}` not found."
-	"Rule `{$rule}` is not a validation rule."
-	'Could not route request.'
+```
+"Could not write template `{$template}` to cache."
+"Entity `{$entity}` not found."
+"Rule `{$rule}` is not a validation rule."
+'Could not route request.'
+```
 
 Examples of **bad** exception messages:
 
-	"Could not write template {$template} to cache." // Literal not marked as such.
-	"Could not write template '{$template}' to cache." // Using ticks instead of backticks.
-	"`{$entity}` not found." // `$entity` may be empty.
+```
+"Could not write template {$template} to cache." // Literal not marked as such.
+"Could not write template '{$template}' to cache." // Using ticks instead of backticks.
+"`{$entity}` not found." // `$entity` may be empty.
+```
 	
