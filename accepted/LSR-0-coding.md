@@ -4,19 +4,19 @@
 
 Lithium core developers use the following coding standards. We suggest you follow the same standards when developing Lithium applications and plugins.
 
-There are some tools which help you keeping in line with the standards. We make use of the `Syntax` command which comes with the [QA plugin for Lithium](http://github.com/UnionOfRAD/li3_qa). Rules which have a corresponding check in Lithium QA are marked with the `?` symbol.
+There are some tools which help you keeping in line with the standards. We make use of the `Syntax` command which comes with the [QA plugin for Lithium](http://github.com/UnionOfRAD/li3_quality). 
 
 ## Files
 
 File names should be created with *CamelCase* (according to the class they contain).
 
-PHP files (files with the php suffix), should not have any whitespaces before or after the opening and closing php tag. The closing tag is preceded by an empty line.<sup>?</sup>
+PHP files (files with the php suffix), should not have any whitespaces before or after the opening and closing php tag. The closing tag is preceded by an empty line.
 
-The closing php tag must always be on the last one of the file.<sup>?</sup> The closing php tag is **not terminated** with a newline character.<sup>?</sup> File **encoding is UTF-8**. The default permissions for folders are octal 0755, for files octal 0644.<sup>? partially</sup> Only if the file must be executable (i.e. from console) use octal 0744 for files.
+The closing php tag must always be on the last one of the file. The closing php tag is **not terminated** with a newline character. File **encoding is UTF-8**. The default permissions for folders are octal 0755, for files octal 0644.<sup>? partially</sup> Only if the file must be executable (i.e. from console) use octal 0744 for files.
 
 ### Lines
 
-Lines must not exceed a limit of **100 characters**.<sup>?</sup> The soft limit is 80 characters. Lines should not have any trailing whitespace characters.<sup>?</sup>
+Lines must not exceed a limit of **100 characters**. The soft limit is 80 characters. Lines should not have any trailing whitespace characters.
 
 ### PHP tags
 
@@ -106,7 +106,7 @@ $params = array('controller' => $params['plugin'], 'action' => $params['controll
 
 ## Operators
 
-All [operators ](http://php.net/manual/en/language.operators.php) must be surrounded by spaces<sup>?</sup>.
+All [operators ](http://php.net/manual/en/language.operators.php) must be surrounded by spaces.
 
 ```php
 $x = $y;
@@ -120,7 +120,7 @@ $x - 23;
 function($x, $y = null) {};
 ```
 
-However there are a few exceptions to the spacing rule<sup>?</sup>:
+However there are a few exceptions to the spacing rule:
 
 1. Increment and decrement operators must be directly followed by or following the variable.
 2. The exclamation mark must be directly followed by the variable.
@@ -169,9 +169,9 @@ if (($a == $b) || ($a == c)) {
 
 In the control structures there should be **1 (one) space before** the first parenthesis and **1 (one) space between** the last parenthesis and the opening bracket.
 
-**Always use curly brackets** in control structures, even if they are not needed. They increase the readability of the code, and they give you fewer logical errors.<sup>?</sup>
+**Always use curly brackets** in control structures, even if they are not needed. They increase the readability of the code, and they give you fewer logical errors.
 
-Opening curly brackets should be placed on the same line as the control structure.<sup>?</sup>  Closing curly brackets should be placed on new lines, and they should have same indentation level as the control structure.<sup>?</sup> The statement included in curly brackets should begin on a new line, and code contained within it should gain a new level of indentation.
+Opening curly brackets should be placed on the same line as the control structure.  Closing curly brackets should be placed on new lines, and they should have same indentation level as the control structure. The statement included in curly brackets should begin on a new line, and code contained within it should gain a new level of indentation.
 
 ```php
 // Bad - no brackets, badly placed statement.
@@ -240,7 +240,7 @@ Array keys used in `$options`/results arrays should be formatted according to th
 
 ## Constants
 
-Constants should be defined in capital letters<sup>?</sup>. If a constant name consists of multiple words, they should be separated by an underscore character.
+Constants should be defined in capital letters. If a constant name consists of multiple words, they should be separated by an underscore character.
 
 ```php
 define('FOO', 1);
@@ -249,7 +249,7 @@ define('FOO_BAR_BAZ', 2);
 
 ## Casts
 
-Casts must not have any whitespace inside the cast, must only use long type names and be **separated by one space** from the following variable or value.<sup>?</sup>
+Casts must not have any whitespace inside the cast, must only use long type names and be **separated by one space** from the following variable or value.
 
 ```php
 // Bad.
@@ -315,7 +315,7 @@ function connection(&$dsn, $persistent = false) {}
 
 ## Namespaces
 
-The namespace  declaration must appear directly after the opening php tag, separated by an empty line.<sup>?</sup> Any static dependencies **appear as one block** after the namespace declaration, separated by an empty line.
+The namespace  declaration must appear directly after the opening php tag, separated by an empty line. Any static dependencies **appear as one block** after the namespace declaration, separated by an empty line.
 
 ```php
 <?php
@@ -360,7 +360,7 @@ Class names should always be singular nouns, i.e. `Dispatcher`, `PagesController
 
 ### Member Visibility
 
-All methods and properties must have  a visibility operator. The `var` operator is forbidden.<sup>?</sup>
+All methods and properties must have  a visibility operator. The `var` operator is forbidden.
 
 A **protected** method or variable name start with a single underscore ("`_`").
 
@@ -441,7 +441,7 @@ If a function has a reciprocal sub-routine (or vice-versa), they should be combi
 
 ### Including
 
-When including files with classes or libraries, use only and always the [require_once](http://php.net/require_once) function. Don't use brackets with the include statements as they are language constructs.<sup>?</sup>
+When including files with classes or libraries, use only and always the [require_once](http://php.net/require_once) function. Don't use brackets with the include statements as they are language constructs.
 
 ### Importing
 
@@ -473,7 +473,7 @@ class Baz extends lithium\core\Object {
 }
 ```
 
-Names appearing after the `use` keyword are always fully qualified but must not have a leading backslash.<sup>?</sup>
+Names appearing after the `use` keyword are always fully qualified but must not have a leading backslash.
 
  * Good: `use lithium\util\Inflector;`
  * Bad: `use \lithium\util\Inflector;`
