@@ -1,3 +1,9 @@
+# Visual Identity
+
+## Status
+
+This spec has been superseeded. Along with the rebrand to li3 a new visual identity is being put in place.
+
 ## Symbol
 
 The symbol is a stylized pyramid. The symbol is kept abstract in contrast to a real world _object_. It emphasizes the cleanliness and pure simplicity of the shape of both code and symbol. Within a text only context `∆` can be used to imitate the symbol.
@@ -63,6 +69,4 @@ The color theme is named _Lithium in Neon_. It's inspired by the colors occurrin
 ## Logo
 
 The text is aligned on the height of the most right corner of the pyramid. The symbol reaches into the kerf of the text. Within a text only context `∆ Lithium` can be used to imitate the logo.
-
-[Download Logo Image](http://li3.me/img/lithium-large.png)
 
