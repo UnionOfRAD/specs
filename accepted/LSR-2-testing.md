@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This document is an extension of [[Spec: Coding]]. The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [Lithium's Unit Testing Framework](http://li3.me/docs/manual/quality-code/testing.wiki) in the manual.
+This document is an extension of [LSR-0](LSR-0-coding.md). The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [Lithium's Unit Testing Framework](http://li3.me/docs/manual/quality-code/testing.wiki) in the manual.
 
 ## Class Names
 
