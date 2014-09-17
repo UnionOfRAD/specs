@@ -64,5 +64,5 @@ The color theme is named _Lithium in Neon_. It's inspired by the colors occurrin
 
 The text is aligned on the height of the most right corner of the pyramid. The symbol reaches into the kerf of the text. Within a text only context `∆ Lithium` can be used to imitate the logo.
 
-[Download Logo Image](http://lithify.me/img/lithium-large.png)
+[Download Logo Image](http://li3.me/img/lithium-large.png)
 

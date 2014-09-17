@@ -161,7 +161,7 @@ Tags should be ordered according to the following list.<sup>◌</sup>
  * `@params`
  * `@return`
 
-The discussion about the order of tags can be reviewed [here](http://lithify.me/bot/view/li3-core/2010-01-08).
+The discussion about the order of tags can be reviewed [here](http://li3.me/bot/view/li3-core/2010-01-08).
 
 ## Referring
 

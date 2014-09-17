@@ -259,7 +259,7 @@ Recent experiments with the intl extension have proven differing results across 
 
 Iterate/Rewrite/throw away code as necessary.
 
-For the `Number` class a skeleton alongside a handful of tests already exists. These should be seen as starting point on how the API could look like. The API of the class takes cues from the existing [Locale class](http://lithify.me/docs/lithium/g11n/Locale) which itself also provides symmetric methods (i.e. compose/decompose).
+For the `Number` class a skeleton alongside a handful of tests already exists. These should be seen as starting point on how the API could look like. The API of the class takes cues from the existing [Locale class](http://li3.me/docs/lithium/g11n/Locale) which itself also provides symmetric methods (i.e. compose/decompose).
 
 [Skeleton Number](http://pastium.org/view/51256ecfad542a34b663c8ce17bb6377)
 [Skeleton NumberTest](http://pastium.org/view/1b5a202e09a041d79d5eaa8843de1bd1)

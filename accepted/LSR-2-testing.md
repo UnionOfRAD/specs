@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This document is an extension of [[Spec: Coding]]. The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [Lithium's Unit Testing Framework](http://lithify.me/docs/manual/quality-code/testing.wiki) in the manual.
+This document is an extension of [[Spec: Coding]]. The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [Lithium's Unit Testing Framework](http://li3.me/docs/manual/quality-code/testing.wiki) in the manual.
 
 ## Class Names
 
@@ -34,7 +34,7 @@ $result = Do::somthing();
 $this->assertEqual($expected, $result);
 ```
 
-Always use the right assertion that does the job. The assertion methods are made available through the `Unit` class from which most tests directly or indirectly inherit. Have a look at the Class Methods section on [API Browser/Unit](http://lithify.me/docs/lithium/test/Unit).
+Always use the right assertion that does the job. The assertion methods are made available through the `Unit` class from which most tests directly or indirectly inherit. Have a look at the Class Methods section on [API Browser/Unit](http://li3.me/docs/lithium/test/Unit).
 
 ```php
 $this->assertTrue($result);
