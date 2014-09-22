@@ -1,10 +1,10 @@
 ## Abstract
 
-Globalization (a term for the combination of internationalization and localization and abbreviated to _g11n_) makes it possible to adapt software to different languages, scripts and regional differences. This document describes the approach Lithium takes towards globalizing software.
+Globalization (a term for the combination of internationalization and localization and abbreviated to _g11n_) makes it possible to adapt software to different languages, scripts and regional differences. This document describes the approach li3 takes towards globalizing software.
 
 ## Introduction
 
-G11n takes advantage of the updated structures and paradigms in Lithium. It's built-in right from the start and the whole framework is developed with it's requirement in mind. G11n consists of related data, translation of static messages and dynamic content, formatting of numbers, dates and currencies, specific validation rules, setting and parsing locale identifiers. The functionality required to allow for full g11n are kept in dedicated namespaces and classes.
+G11n takes advantage of the updated structures and paradigms in li3. It's built-in right from the start and the whole framework is developed with it's requirement in mind. G11n consists of related data, translation of static messages and dynamic content, formatting of numbers, dates and currencies, specific validation rules, setting and parsing locale identifiers. The functionality required to allow for full g11n are kept in dedicated namespaces and classes.
 
 ### Terms
 
@@ -14,7 +14,7 @@ This specification proposes the term globalization (g11n) as the combination of 
 
 #### Locale
 
-The locale (here: _locale identifier_) is used to distinguish among different sets of common preferences. The identifier used by Lithium is based in it's structure upon [Unicode's language identifier]((http://www.unicode.org/reports/tr35/tr35-12.html#Identifiers) and is compliant to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). A list of all valid locales can be found at the [BCP47 Registry](http://www.iana.org/assignments/language-subtag-registry).
+The locale (here: _locale identifier_) is used to distinguish among different sets of common preferences. The identifier used by li3 is based in it's structure upon [Unicode's language identifier]((http://www.unicode.org/reports/tr35/tr35-12.html#Identifiers) and is compliant to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). A list of all valid locales can be found at the [BCP47 Registry](http://www.iana.org/assignments/language-subtag-registry).
 
 `language[_Script][_TERRITORY][_VARIANT]`
 

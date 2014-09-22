@@ -10,11 +10,11 @@ The symbol is a stylized pyramid. The symbol is kept abstract in contrast to a r
 
 ## Typography
 
-The font used for the _Lithium_ text is _Helvetica Medium Extended_.
+The font used for the _li3_ text is _Helvetica Medium Extended_.
 
 ## Color
 
-The color theme is named _Lithium in Neon_. It's inspired by the colors occurring when [burning a piece of lithium](https://secure.wikimedia.org/wikipedia/en/wiki/File:Flammenf%C3%A4rbungLi.png). An external tool for playing around with the theme can be found on [this page](http://kuler.adobe.com/#themeID/630252). Following the commonly used colors.
+The color theme is named _li3 in Neon_. It's inspired by the colors occurring when [burning a piece of lithium](https://secure.wikimedia.org/wikipedia/en/wiki/File:Flammenf%C3%A4rbungLi.png). An external tool for playing around with the theme can be found on [this page](http://kuler.adobe.com/#themeID/630252). Following the commonly used colors.
 
 ### Blacks
 
@@ -68,5 +68,5 @@ The color theme is named _Lithium in Neon_. It's inspired by the colors occurrin
 
 ## Logo
 
-The text is aligned on the height of the most right corner of the pyramid. The symbol reaches into the kerf of the text. Within a text only context `∆ Lithium` can be used to imitate the logo.
+The text is aligned on the height of the most right corner of the pyramid. The symbol reaches into the kerf of the text. Within a text only context `∆ li3` can be used to imitate the logo.
 

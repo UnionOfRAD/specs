@@ -2,9 +2,9 @@
 
 ## Abstract
 
-Lithium core developers use the following coding standards. We suggest you follow the same standards when developing Lithium applications and plugins.
+li3 core developers use the following coding standards. We suggest you follow the same standards when developing li3 applications and plugins.
 
-There are some tools which help you keeping in line with the standards. We make use of the `Syntax` command which comes with the [QA plugin for Lithium](http://github.com/UnionOfRAD/li3_quality). 
+There are some tools which help you keeping in line with the standards. We make use of the `Syntax` command which comes with the [QA plugin for li3](http://github.com/UnionOfRAD/li3_quality). 
 
 ## Files
 
@@ -32,7 +32,7 @@ Never use short open tags:
 <?
 ```
 
-Well, unless you are in a view and want the variable data to be automatically escaped. See the Lithium [template namespace documentation](http://li3.me/docs/lithium/template) for more information on this exception.
+Well, unless you are in a view and want the variable data to be automatically escaped. See the li3 [template namespace documentation](http://li3.me/docs/lithium/template) for more information on this exception.
 
 ```php
 <?=$post->title;?>
@@ -378,7 +378,7 @@ A private method or variables: **This is a framework, it should be extensible.**
 
 ### Anatomy
 
-This defines the basic anatomy of a Lithium class, by the numbers:
+This defines the basic anatomy of a li3 class, by the numbers:
 
 ```php
 <?php
@@ -485,7 +485,7 @@ Exceptions must not be used for flow control (they're quite expensive as are err
 
 Use exceptions only if the situation is really exceptional and doesn't occur under **normal** conditions (i.e. trying to read a file and file does not exist/is not readable).
 
-Use [SPL exceptions](http://php.net/manual/en/spl.exceptions.php) or those provided by Lithium. 
+Use [SPL exceptions](http://php.net/manual/en/spl.exceptions.php) or those provided by li3. 
 
 #### Messages
 

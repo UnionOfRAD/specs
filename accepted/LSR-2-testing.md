@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This document is an extension of [LSR-0](LSR-0-coding.md). The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [Lithium's Unit Testing Framework](http://li3.me/docs/manual/quality-code/testing.wiki) in the manual.
+This document is an extension of [LSR-0](LSR-0-coding.md). The goal of this document is to keep core tests consistent. We suggest you follow the same rules in your own projects. For more information see the section on [li3's Unit Testing Framework](http://li3.me/docs/manual/quality-code/testing.wiki) in the manual.
 
 ## Class Names
 
@@ -72,12 +72,12 @@ class ExampleTest extends \lithium\test\Unit {
 
 ## Coverage
 
-The Lithium test coverage policy requires:
+The li3 test coverage policy requires:
 
 1. A corresponding test exists for each class.
 2. All classes have a test coverage of **85%** and higher.
 
 These 2 conditions must be met before the project reaches stable. 
 
-The current status for Lithium regarding test coverage is tracked [through a ticket](https://github.com/UnionOfRAD/lithium/issues/17) in our tracking system. Missing tests or coverage are considered a bug.
+The current status for li3 regarding test coverage is tracked [through a ticket](https://github.com/UnionOfRAD/lithium/issues/17) in our tracking system. Missing tests or coverage are considered a bug.
 

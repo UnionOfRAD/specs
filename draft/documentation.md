@@ -16,11 +16,11 @@ The main reference point for all documentation will be the API.  API documentati
 
 ## Tutorials
 
-Tutorials will be short, step-by-step explanations, with code, of how to accomplish a particular task using the framework.  For example, 'how to authenticate users with OpenID', or 'how to send email notifications on a database error'.  Each tutorial will be its own Lithium project with its own Git repository, and will have a "readme.wiki" file in the root directory. Markdown files will be extended with syntax for embedding content from files in the repository. Tutorials will be paired with unit and integration tests that verify the functionality presented in the tutorial; this will ensure that tutorials stay in-sync with the current code.
+Tutorials will be short, step-by-step explanations, with code, of how to accomplish a particular task using the framework.  For example, 'how to authenticate users with OpenID', or 'how to send email notifications on a database error'.  Each tutorial will be its own li3 project with its own Git repository, and will have a "readme.wiki" file in the root directory. Markdown files will be extended with syntax for embedding content from files in the repository. Tutorials will be paired with unit and integration tests that verify the functionality presented in the tutorial; this will ensure that tutorials stay in-sync with the current code.
 
 ## Guides
 
-As opposed to tutorials, guides are more core-technology-oriented.  They give broad, functional overviews of specific parts of the framework, with links to relevant tutorials or API docs.  For example, the filters system, or content handlers in the template system. Like tutorials, each guide will be composed of a Lithium project in a Git repository, with a "readme.wiki" file, and will contain unit and integration tests.
+As opposed to tutorials, guides are more core-technology-oriented.  They give broad, functional overviews of specific parts of the framework, with links to relevant tutorials or API docs.  For example, the filters system, or content handlers in the template system. Like tutorials, each guide will be composed of a li3 project in a Git repository, with a "readme.wiki" file, and will contain unit and integration tests.
 
 ## 'Book Learning
 

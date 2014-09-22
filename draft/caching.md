@@ -1,7 +1,7 @@
 
 ## Objectives
 
-Caching in Lithium will be built-in right from the start, and will have these goals in mind:
+Caching in li3 will be built-in right from the start, and will have these goals in mind:
 
  - Intuitive API
  - Provide a base for all caching used in the core
