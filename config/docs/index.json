@@ -10,7 +10,7 @@
 				"title": "Accepted",
 				"contents": {
 					"accepted/LSR-0-coding.md": {"title": "LSR-0 Coding"},
-					"accepted/LSR-1-documenting.md": {"title": "LSR-0 Documenting"},
+					"accepted/LSR-1-documenting.md": {"title": "LSR-1 Documenting"},
 					"accepted/LSR-2-testing.md": {"title": "LSR-2 Testing"}
 				}
 			},
