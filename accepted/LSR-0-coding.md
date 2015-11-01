@@ -12,7 +12,7 @@ File names should be created with *CamelCase* (according to the class they conta
 
 PHP files (files with the php suffix), should not have any whitespaces before or after the opening and closing php tag. The closing tag is preceded by an empty line.
 
-The closing php tag must always be on the last one of the file. The closing php tag is **not terminated** with a newline character. File **encoding is UTF-8**. The default permissions for folders are octal 0755, for files octal 0644.<sup>? partially</sup> Only if the file must be executable (i.e. from console) use octal 0744 for files.
+The closing php tag must always be on the last line of the file. The closing php tag is **not terminated** with a newline character. File **encoding is UTF-8**. The default permissions for folders are octal 0755, for files octal 0644.<sup>? partially</sup> Only if the file must be executable (i.e. from console) use octal 0744 for files.
 
 ### Lines
 
