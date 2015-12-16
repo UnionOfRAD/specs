@@ -437,6 +437,20 @@ If a function has a reciprocal sub-routine (or vice-versa), they should be combi
 	}
 ```
 
+## Traits
+
+### Name
+
+Traits names should be written in _CamelCase_, for example:
+
+```php
+trait Respondable {
+     // ...
+}
+```
+
+Trait names should always be named adjectives, i.e. `Respondable`, `Slugabble` or `Filterable`. The name must **not** be suffixed with the word `Trait`.
+
 ## Importing/Including
 
 ### Including
