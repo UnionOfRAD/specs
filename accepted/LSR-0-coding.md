@@ -441,7 +441,7 @@ If a function has a reciprocal sub-routine (or vice-versa), they should be combi
 
 ### Name
 
-Traits names should be written in _CamelCase_, for example:
+Trait names should be written in _CamelCase_, for example:
 
 ```php
 trait Respondable {
@@ -449,7 +449,7 @@ trait Respondable {
 }
 ```
 
-Trait names should always be named adjectives, i.e. `Respondable`, `Slugabble` or `Filterable`. The name must **not** be suffixed with the word `Trait`.
+Trait names should always be named adjectives, i.e. `Respondable`, `Sluggable` or `Filterable`. The name must **not** be suffixed with the word `Trait`.
 
 ## Importing/Including
 
