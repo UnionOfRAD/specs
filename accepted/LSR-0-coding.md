@@ -16,7 +16,9 @@ The closing php tag must always be on the last line of the file. The closing php
 
 ### Lines
 
-Lines must not exceed a limit of **100 characters**. The soft limit is 80 characters. Lines should not have any trailing whitespace characters.
+Lines must not exceed a limit of **100 characters**. The soft limit is 80 characters. Both limits include indentation. 
+
+Lines should not have any trailing whitespace characters.
 
 ### PHP tags
 
