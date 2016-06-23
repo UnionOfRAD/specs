@@ -99,8 +99,8 @@ Here's an API example that gives an overview of how adapters will be configured.
 
 use lithium\security\Access;
 
-Access::config(array(
-        'simple' => array(
+Access::config([
+        'simple' => [
                 'adapter' => 'SimpleTextBasedThing',
                 // This adapter takes a user record and an HTTP request object and pulls out the information
                 // to match against the rules defined in "access.txt".
@@ -114,16 +114,16 @@ Access::config(array(
                         }
                         return $chain->next($self, $params, $chain);
                 }
-        ),
-        'complicated' => array(
+        ],
+        'complicated' => [
                 'adapter' => 'DatabaseDrivenAdapterThing',
                 /* This adapter can take two record objects and see if one can access the other */
-        ),
-        'other' => array(
+        ],
+        'other' => [
                 'adapter' => 'TuringCompleteStateMachineThing',
                 /* You get the idea */
-        )
-));
+        ]
+]);
 
 ?>
 

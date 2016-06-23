@@ -76,34 +76,34 @@ Indentation is **always symmetrical**. Any opening syntax construct that begins 
 // (2) Closing parenthesis aren't on their own line.
 // (3) The first array element doesn't break to its own line.
 // (4) Either no space or too many spaces between key name and arrows.
-$params = array_merge($params, array('controller'=> $params['plugin'],
+$params = array_merge($params, ['controller'=> $params['plugin'],
 			'action'=> $params['controller'],
 			'pass'   => array_merge($pass, $params['pass']),
-			'named'=> array_merge($named, $params['named'])));
+			'named'=> array_merge($named, $params['named'])]);
 
 // Good.
-$params = array_merge($params, array(
+$params = array_merge($params, [
 	'controller' => $params['plugin'],
 	'action' => $params['controller'],
 	'pass' => array_merge($pass, $params['pass']),
 	'named' => array_merge($named, $params['named'])
-));
+]);
 
 // Bad (if any array elements have their own line, all should).
-$params = array('controller'=> $params['plugin'],
+$params = ['controller'=> $params['plugin'],
 	'action'=> $params['controller'],
 	'pass' => $params['pass']
-);
+];
 
 // Good.
-$params = array(
+$params = [
 	'controller' => $params['plugin'],
 	'action' => $params['controller'],
 	'pass' => $params['pass']
-);
+];
 
 // Also okay, since the whole structure is defined on one line.
-$params = array('controller' => $params['plugin'], 'action' => $params['controller'], 'pass' => $params['pass']);
+$params = ['controller' => $params['plugin'], 'action' => $params['controller'], 'pass' => $params['pass']];
 ```
 
 ## Operators
@@ -233,12 +233,16 @@ Variable names should be as descriptive as possible, but also as short as possib
 
 ```php
 $user = 'John';
-$users = array('John', 'Hans', 'Arne');
+$users = ['John', 'Hans', 'Arne'];
 
 $dispatcher = new Dispatcher();
 ```
 
 Array keys used in `$options`/results arrays should be formatted according to the same rules as properties/variables.
+
+## Arrays
+
+Short array syntax is preferred `[]` over the long array syntax `array()`.
 
 ## Constants
 
@@ -392,12 +396,12 @@ use my\package\util\Bar;
 
 class AwesomeSocket extends \lithium\core\Object { // (3)
 
-	protected $_classes = array( // (4)
+	protected $_classes = [ // (4)
 		'query' => 'lithium\model\Query',
 		'record' => 'lithium\model\Record'
-	);
+	];
 
-	public function __construct($config = array()) { // (5)
+	public function __construct($config = []) { // (5)
 		// Minimum class bootstrap logic here...
 		parent::__construct($config);
 	}
@@ -533,4 +537,8 @@ Examples of **bad** exception messages:
 "Could not write template '{$template}' to cache." // Using ticks instead of backticks.
 "`{$entity}` not found." // `$entity` may be empty.
 ```
-	
+
+### Amended
+
+- Added rule for trait names, December 2016
+- Short array syntax is now preferred, June 2016

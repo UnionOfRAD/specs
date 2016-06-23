@@ -37,17 +37,17 @@ Usage examples can be given as part of a long description but should be as short
 ```
 [...]
  * Usage:
- * {{{
+ * ```
  * Foo::bar();
- * // returns array('a', 'b')
+ * // returns ['a', 'b']
  * 
  * Foo::out('xyz'); // echoes xyz
- * }\}}
+ * ```
  *  
  * Extended usage:
- * {{{
+ * ```
  * Foo::run('fast'); // returns true
- * }\}}
+ * ```
 [..]
 ```
 

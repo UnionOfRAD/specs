@@ -54,13 +54,13 @@ Two methods are relevant for backing up and restoring global state. Within `setU
 ```php
 class ExampleTest extends \lithium\test\Unit {
 
-    protected $_backup = array();
+    protected $_backup = [];
 
     public function setUp() {
         $this->_backup['catalog'] = Catalog::config();
-        Catalog::config(array(
-            'runtime' => array('adapter' => new Memory())
-        ));
+        Catalog::config([
+            'runtime' => ['adapter' => new Memory()]
+        ]);
     }
 
     public function tearDown() {

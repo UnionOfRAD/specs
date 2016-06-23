@@ -59,7 +59,7 @@ class DatabaseException extends \lithium\core\Exception {
 
     protected $_sql;
 
-    public function __construct($message = null, $info = array()) {
+    public function __construct($message = null, $info = []) {
         extract($info);
         $this->_sql = $sql;
         parent::__construct($message, $code);

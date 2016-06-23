@@ -89,16 +89,16 @@ The class is able to **aggregate** data from different sources which allows to c
 
 ```
 // Configures the runtime source.
-Catalog::config(array('runtime' => array('adapter' => 'Memory')));
+Catalog::config(['runtime' => ['adapter' => 'Memory']]);
 
 $data = '/[0-9]{5}/'
-Catalog::write('validation.postalCode', 'de_DE', $data, array('name' => 'runtime'));
+Catalog::write('validation.postalCode', 'de_DE', $data, ['name' => 'runtime']);
 
 // Reads from all configured sources
 Catalog::read('validation.postalCode', 'en_US');
 
 // Reads from just the runtime source.
-Catalog::read('validation.postalCode', 'en_US', array('name' => 'runtime'));
+Catalog::read('validation.postalCode', 'en_US', ['name' => 'runtime']);
 ```
 
 Several adapters are available:
@@ -137,7 +137,7 @@ Marking messages as translatable is done by using `$t()` and `$tn()` which are s
 
 ```
 $t('Look!');
-$tn('book', 'books', array('count' => 3));
+$tn('book', 'books', ['count' => 3]);
 ```
 
 The functions can be retrieved through `Message::shortHands()`. To make them available in all templates you can use a filter to add those as content filters.
@@ -162,7 +162,7 @@ Since the marked messages will later be translated by others it is important to 
 When marking messages you can use standard `String::insert()`-style replacement.
 
 ```
-$t('Look! A {:color} bird!', array('color' => $t('red')));
+$t('Look! A {:color} bird!', ['color' => $t('red')]);
 ```
 
 ### Plurals
@@ -180,7 +180,7 @@ Especially very short messages have an ambiguous meaning. To aid translators det
 ```
 $t('manual'); // bad
 $t('Read the manual.'); // good
-$t('manual', array('context' => 'the installation manual')); // good alternative
+$t('manual', ['context' => 'the installation manual']); // good alternative
 ```
 
 **Note**: The context option is not yet implemented.
@@ -190,13 +190,13 @@ $t('manual', array('context' => 'the installation manual')); // good alternative
 Passing the `'noop'` option to `Message::translate()` will result in the default being returned. Since the short-hand translation functions use `translate()` internally you can use the option to  just mark a string for translation without it being translated during runtime.
 
 ```
-$t('foo', array('noop' => true));
-$tn('foo', 'bar', array('noop' => true)); // we don't need to pass `'count'` in this case
+$t('foo', ['noop' => true]);
+$tn('foo', 'bar', ['noop' => true]); // we don't need to pass `'count'` in this case
 ```
 
 ```
 // File: a.php
-$t('foo', array('noop' => true)); // the extractor picks up `foo`
+$t('foo', ['noop' => true]); // the extractor picks up `foo`
 
 // File: b.php
 $section = 'foo';
@@ -274,7 +274,7 @@ For the `Number` class a skeleton alongside a handful of tests already exists. T
 
 ```
 foreach ($this->data['Image'] as $item) {
-        echo $number->format($item['width'], array('places' => 2)) . ' cm';
+        echo $number->format($item['width'], ['places' => 2]) . ' cm';
 }
 ```
 
@@ -282,7 +282,7 @@ Emily wants the users of the site to be able to add new images. She creates a fo
 
 ```
 echo $form->input('title');
-echo $form->input('width', array('after' => 'cm');
+echo $form->input('width', ['after' => 'cm'];
 ```
 
 Now Horst from Germany starts to fill out the form.  He enters the title `Grosses Bild` and the width for the image `1,20`. Now Tom from the United States starts to fill out the form. He enters the title `Large Image` and the width `1.20`. Both expect the form to submit successfully and that the value `1.2` is stored in the db.
@@ -296,7 +296,7 @@ echo $time->nice($this->data['Post']['created']);
 He may also choose to disable automatic formatting because his blog is in english only.
 
 ```
-echo $time->nice($this->data['Post']['created'], array('language' => 'en'));
+echo $time->nice($this->data['Post']['created'], ['language' => 'en']);
 ```
 
 

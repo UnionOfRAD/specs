@@ -14,10 +14,10 @@ Caching in li3 will be built-in right from the start, and will have these goals 
 - Adapter-driven base.
     - Any cache adapter which writes directly to some sort of persistent store (as opposed to a cache strategy which wraps a storage adapter with additional functionality).
     - General Cache API:
-        - Cache::write( (string) $name, (string|int) $key, (string|array) $value, $conditions = array())
-        - Cache::read( (string) $name, (string|int) $key, $conditions = array())
-        - Cache::delete( (string) $name, (string|int) $key, $conditions = array())
-        - Cache::fetch( (string) $name, (string|int) $key,  $closure, $conditions = array())
+        - Cache::write( (string) $name, (string|int) $key, (string|array) $value, $conditions = [])
+        - Cache::read( (string) $name, (string|int) $key, $conditions = [])
+        - Cache::delete( (string) $name, (string|int) $key, $conditions = [])
+        - Cache::fetch( (string) $name, (string|int) $key,  $closure, $conditions = [])
         - Cache::adapter( (string) $name, $options)
         - Cache::clean( (string) $name = null)
         - Cache::clear( (string) $name = null)

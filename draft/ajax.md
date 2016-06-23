@@ -13,20 +13,20 @@ The following example is useful when the template content used in an Ajax reques
 ```php
 use lithium\net\http\Media;
 
-Media::type('ajax', array('application/xhtml+xml', 'text/html'), array(
+Media::type('ajax', ['application/xhtml+xml', 'text/html'], [
         'view' => 'lithium\template\View',
-        'paths' => array(
-                'template' => array(
+        'paths' => [
+                'template' => [
                         '{:library}/views/{:controller}/{:template}.ajax.php',
                         '{:library}/views/{:controller}/{:template}.html.php'
-                ),
+                ],
                 'layout' => '{:library}/views/layouts/default.ajax.php'
-        ),
-        'conditions' => array('ajax' => true)
-));
+        ],
+        'conditions' => ['ajax' => true]
+]);
 ```
 
-Setting `'conditions' => array('ajax' => true)` is the equivalent of calling `$this->request->is('ajax')` in the controller.
+Setting `'conditions' => ['ajax' => true]` is the equivalent of calling `$this->request->is('ajax')` in the controller.
 
 **views/hello_world/test.ajax.php**:
 ```
@@ -47,7 +47,7 @@ $(document).ready(function() {
 <p>
         <?=$message; ?> a regular request.
 </p>
-<?=$this->html->link('Load...', 'HelloWorld::test', array('target' => 'p:first')); ?>
+<?=$this->html->link('Load...', 'HelloWorld::test', ['target' => 'p:first']); ?>
 ```
 
 **views/layouts/default.ajax.php**:
