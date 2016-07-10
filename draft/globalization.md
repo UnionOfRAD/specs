@@ -14,7 +14,7 @@ This specification proposes the term globalization (g11n) as the combination of 
 
 #### Locale
 
-The locale (here: _locale identifier_) is used to distinguish among different sets of common preferences. The identifier used by li3 is based in it's structure upon [Unicode's language identifier]((http://www.unicode.org/reports/tr35/tr35-12.html#Identifiers) and is compliant to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). A list of all valid locales can be found at the [BCP47 Registry](http://www.iana.org/assignments/language-subtag-registry).
+The locale (here: _locale identifier_) is used to distinguish among different sets of common preferences. The identifier used by li3 is based in it's structure upon [Unicode's language identifier](http://www.unicode.org/reports/tr35/tr35-12.html#Identifiers) and is compliant to [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt). A list of all valid locales can be found at the [BCP47 Registry](http://www.iana.org/assignments/language-subtag-registry).
 
 `language[_Script][_TERRITORY][_VARIANT]`
 
